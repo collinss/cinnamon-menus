@@ -1,13 +1,22 @@
 public_headers = [
-	'gmenu-tree.h',
+    'gmenu-tree.h',
+    'gmenu-tree-item.h',
+    'gmenu-tree-directory.h',
+    'gmenu-tree-entry.h',
 ]
 
 public_sources = [
     'gmenu-tree.c',
+    'gmenu-tree-item.c',
+    'gmenu-tree-directory.c',
+    'gmenu-tree-entry.c',
     public_headers,
 ]
 
 libmenu_sources = [
+    # 'gmenu-tree-item-private.h',
+    'gmenu-tree-directory-private.h',
+    'gmenu-tree-entry-private.h',
     'desktop-entries.c',
     'desktop-entries.h',
     'entry-directories.c',
